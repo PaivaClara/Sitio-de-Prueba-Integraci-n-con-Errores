@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sitio con Errores QA</title>
+  <meta name="viewport" content="width=640">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sitio De Prueba QA Integrado</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a>Acerca</a></li> <!-- falta href -->
+        <li><div>Contacto</div></li> <!-- mal uso de etiqueta -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 style="color: yellow;">Formulario de contacto</h2> <!-- mal contraste -->
+      <form id="contactForm">
+        <label>Nombre</label>
+        <input type="text" id="name"><br>
+
+        <label for="email">Correo</label>
+        <input type="email" name="email"><br> <!-- falta for correcto -->
+
+        <button type="submit" onclick="enviarFormulario()">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Contenido dinámico</h2>
+      <button onclick="cargarContenido()">Cargar texto</button>
+      <div id="contenido"></div>
+    </section>
+
+    <section>
+      <h2>API externa</h2>
+      <button onclick="llamarAPI()">Llamar API</button>
+      <div id="respuestaAPI"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sitio QA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  background-color: #ffffff;
+  font-family: Comic Sans MS; /* Poco profesional */
+}
+
+h1 {
+  font-size: 50px;
+  color: pink !important; /* uso innecesario de !important */
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+
+input {
+  border: 2px solid red;
+  padding: 10px;
+  color: lightgray;
+  background-color: white;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 40px; /* demasiado grande en mobile */
+  }
+}
